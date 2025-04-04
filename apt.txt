@@ -1,0 +1,7 @@
+binutils
+htop
+tree
+tar
+zip
+unzip
+less

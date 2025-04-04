@@ -1,0 +1,83 @@
+name: cupy-xarray
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - dask-core
+  - distributed
+  - flox
+  - numpy
+  - polars
+  - xvec
+  - xarray
+  # IO / auth libraries
+  - boto3
+  - earthaccess
+  - fiona
+  - fsspec
+  - gcsfs
+  - h5netcdf
+  - h5py
+  - hdf5
+  - netcdf4
+  - pooch
+  - libgdal # core C++ library and all plugins
+  # Resampling libraries
+  - geoutils
+  - pyresample
+  - rasterio
+  - rioxarray
+  - scipy
+  - odc-geo
+  - xcube
+  - pygmt
+  - xesmf>=0.8.0
+  # For profiling
+  - pyinstrument
+  - memray
+  # For dask debugging
+  - python-graphviz
+  # For development
+  - wget
+  - curl
+  - gcc
+  - make
+  - jupyter
+  - pip
+  - pipx
+  - uv
+  - pixi
+  - pre-commit
+  - pytest
+  - pytest-cov
+  - pytest-env
+  - pytest-xdist
+  - pytest-timeout
+  # For development on the Hub
+  - git
+  - gh
+  - code-server<=4.96.4
+  - jupyter-resource-usage
+  - jupyter-vscode-proxy
+  # For visualizing results
+  - hvplot
+  # For building the quarto book
+  - jupytext
+  # For GPU demo
+  - cupy~=13.3.0
+  - cupy-xarray~=0.1.4
+  - dask-jobqueue~=0.9.0
+  - rapidsai-nightly::kvikio>=25.04.00a
+  - nvidia-dali-python~=1.45.0
+  - nvtx~=0.2.11
+  - pytorch~=2.6.0
+  - segmentation-models-pytorch~=0.4.0
+  - pip:
+      - rio-cogeo
+      - morecantile
+      # For development on the Hub
+      - gh-scoped-creds
+      # Development versions for icechunk
+      - git+https://github.com/pydata/sparse@main # latest stable release doesn't ensure NumPy 2.0 compatibility
+      - nvidia-nvcomp-cu12
