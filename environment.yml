@@ -5,3 +5,8 @@ channels:
 dependencies:
   - cupy
   - cupy-xarray
+  # IO / auth libraries
+  - boto3
+  - earthaccess
+  - fsspec
+  - gcsfs
